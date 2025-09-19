@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="mod/aipersonchat/db" VERSION="20250918" COMMENT="XMLDB file for Moodle mod_aipersonchat">
+  <TABLES>
+    <TABLE NAME="aipersonchat" COMMENT="AI Person Chat activity instances">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="Course this activity is part of"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="Activity name"/>
+        <FIELD NAME="intro" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Activity description"/>
+        <FIELD NAME="introformat" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="1" SEQUENCE="false" COMMENT="Format of intro field"/>
+        <FIELD NAME="personname" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="Name of the historic person"/>
+        <FIELD NAME="personurl" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="URL with information about the person"/>
+        <FIELD NAME="imageurl" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="URL of person image"/>
+        <FIELD NAME="personera" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" COMMENT="Time period/era of the person"/>
+        <FIELD NAME="restricttopic" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="1" SEQUENCE="false" COMMENT="Whether to restrict chat to person topic only"/>
+        <FIELD NAME="maxmessages" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="50" SEQUENCE="false" COMMENT="Maximum messages per student"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="Time created"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="Time modified"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="course" TYPE="foreign" FIELDS="course" REFTABLE="course" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="aipersonchat_messages" COMMENT="Chat messages between students and AI persons">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="aipersonchatid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="AI Person Chat activity instance"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="User who sent the message"/>
+        <FIELD NAME="message" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="Message content"/>
+        <FIELD NAME="response" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="AI response to the message"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="Time message was created"/>
+        <FIELD NAME="timeresponse" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="Time AI response was generated"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="aipersonchatid" TYPE="foreign" FIELDS="aipersonchatid" REFTABLE="aipersonchat" REFFIELDS="id"/>
+        <KEY NAME="userid" TYPE="foreign" FIELDS="userid" REFTABLE="user" REFFIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="aipersonchatid_userid" UNIQUE="false" FIELDS="aipersonchatid, userid"/>
+        <INDEX NAME="timecreated" UNIQUE="false" FIELDS="timecreated"/>
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>
