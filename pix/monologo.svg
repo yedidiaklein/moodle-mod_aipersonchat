@@ -1,67 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
-   version="1.1"
-   id="svg5"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="aipersonchat.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview7"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     showgrid="false"
-     inkscape:zoom="0.2102413"
-     inkscape:cx="-416.18844"
-     inkscape:cy="563.63806"
-     inkscape:window-width="1920"
-     inkscape:window-height="1131"
-     inkscape:window-x="0"
-     inkscape:window-y="32"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
-  <defs
-     id="defs2">
-    <pattern
-       inkscape:collect="always"
-       patternUnits="userSpaceOnUse"
-       width="2"
-       height="1"
-       patternTransform="translate(0,0) scale(10,10)"
-       id="Strips1_1"
-       inkscape:stockid="Stripes 1:1">
-      <rect
-         style="fill:black;stroke:none"
-         x="0"
-         y="-0.5"
-         width="1"
-         height="2"
-         id="rect1775" />
-    </pattern>
-  </defs>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <ellipse
-       style="fill:url(#Strips1_1);fill-opacity:1;stroke-width:0.264583"
-       id="path111"
-       cx="118.96921"
-       cy="107.89277"
-       rx="86.062675"
-       ry="71.329796" />
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#4796E7" d="M27,54.0023695 C27,51.7919219 28.787167,49.7942228 30.9642898,49.5435455 L44,48.0425936 L57.0357102,49.5435455 C59.225127,49.7956384 61,51.7918218 61,54.0023695 L61,61 L27,61 L27,54.0023695 Z"/>
+    <path fill="#FFDD95" d="M38,43.3164468 C34.9897907,40.470456 33,35.8615543 33,32 C33,25.9248678 37.9248678,21 44,21 C50.0751322,21 55,25.9248678 55,32 C55,35.8615543 53.0102093,40.470456 50,43.3164468 L50,50 C50,50 45.9325778,51.4486507 44,51.4486507 C42.0674222,51.4486507 38,50 38,50 L38,43.3164468 Z"/>
+    <circle cx="35" cy="37" r="3" fill="#FFDD95"/>
+    <circle cx="53" cy="37" r="3" fill="#FFDD95"/>
+    <path fill="#80D25B" d="M13.375,30 L38.9976004,30 C40.1037214,30 41,29.1059106 41,28.0029953 L41,5.99700466 C41,4.89497885 40.1034952,4 38.9976004,4 L6.00239962,4 C4.89627863,4 4,4.89408944 4,5.99700466 L4,28.0029953 C4,29.1050211 4.89650485,30 6.00239962,30 L9,30 L9,35 L13.375,30 Z"/>
+    <circle cx="14" cy="17" r="2" fill="#BD7575"/>
+    <circle cx="23" cy="17" r="2" fill="#BD7575"/>
+    <circle cx="32" cy="17" r="2" fill="#BD7575"/>
   </g>
 </svg>
