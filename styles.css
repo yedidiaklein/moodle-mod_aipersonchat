@@ -189,3 +189,19 @@
         color: #e2e8f0;
     }
 }
+
+.aipersonchat-person-link {
+   display: inline-block;
+  max-width: 200px;        /* adjust to fit smartphone width */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+/* Make it responsive for smaller screens */
+@media (max-width: 600px) {
+  .aipersonchat-person-link {
+    max-width: 120px; /* make it shorter on mobile */
+  }
+}

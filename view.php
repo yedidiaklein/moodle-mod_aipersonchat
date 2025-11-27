@@ -107,7 +107,7 @@ if (!empty($aiperchat->personurl)) {
     } else {
         echo html_writer::tag('p',
             get_string('learnmore', 'mod_aipersonchat') . ': ' .
-            html_writer::link($personurl, $personurl, ['target' => '_blank'])
+            html_writer::link($personurl, $personurl, ['target' => '_blank', 'class' => 'aipersonchat-person-link'])
         );
     }
 }

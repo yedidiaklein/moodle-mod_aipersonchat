@@ -33,7 +33,7 @@ class course_module_viewed extends \core\event\course_module_viewed {
      * Set basic properties for the event.
      */
     protected function init() {
-    $this->data['objecttable'] = 'aipersonchat';
+        $this->data['objecttable'] = 'aipersonchat';
         $this->data['crud'] = 'r';
         $this->data['edulevel'] = self::LEVEL_PARTICIPATING;
     }
@@ -63,6 +63,6 @@ class course_module_viewed extends \core\event\course_module_viewed {
      * @return \moodle_url
      */
     public function get_url() {
-    return new \moodle_url('/mod/aipersonchat/view.php', ['id' => $this->contextinstanceid]);
+        return new \moodle_url('/mod/aipersonchat/view.php', ['id' => $this->contextinstanceid]);
     }
 }

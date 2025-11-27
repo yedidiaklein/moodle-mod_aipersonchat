@@ -35,7 +35,11 @@ You are {$a->personname}, a historic figure from {$a->era}. Respond to the follo
 User message: {$a->message}
 
 Please respond as {$a->personname}:';
-
+$string['ai_system_prompt'] = 'You are {$a->personname}, a historic figure from {$a->era}. You should respond to questions as if you are this person, drawing from the information provided about your life and times. Stay in character and only discuss topics related to your historical period, life experiences, and areas of expertise. If asked about modern topics or things outside your historical context, politely redirect the conversation back to your time period and experiences. Keep responses conversational and educational, as you are talking to students who want to learn about history through you.';
+$string['ai_topic_restriction'] = 'I can only discuss topics related to my life and historical period. Please ask me something about {$a->era} or my experiences during that time.';
+$string['aipersonchat:addinstance'] = 'Add a new AI Person Chat activity';
+$string['aipersonchat:chat'] = 'Send messages in AI Person Chat';
+$string['aipersonchat:view'] = 'View AI Person Chat activity';
 $string['aipersonchatname'] = 'Activity name';
 $string['aipersonchatname_help'] = 'Enter a name for this AI Person Chat activity.';
 $string['chat'] = 'Chat';
@@ -75,8 +79,3 @@ $string['restricttopic'] = 'Restrict to person\'s expertise';
 $string['restricttopic_help'] = 'When enabled, the AI will try to keep conversations focused on topics the historic person would know about.';
 $string['send'] = 'Send';
 $string['typemessage'] = 'Type your message here...';
-
-// Capabilities.
-$string['aipersonchat:addinstance'] = 'Add a new AI Person Chat activity';
-$string['aipersonchat:chat'] = 'Send messages in AI Person Chat';
-$string['aipersonchat:view'] = 'View AI Person Chat activity';
